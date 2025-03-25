@@ -22,4 +22,13 @@ menu.para enthält die Parameter, fass das Script diese benötigt
 die Nummer 3stellig, Leerstelle, dann die laufende Nummer des Paramters (1 bis9), Leerstelle, dann N (numerischer Parameter) oder T (Textparamter), 
 Leerstelle, einen Text, der sagt, was gefragt ist. 
 
+Actung ; 
+nach dem Koieren der Script : 
+im Verzeichnis des Menüs ein Terminal starten
 
+chmod +x menu.sh
+chmod +x menu2.sh
+
+starten aus dem Terminal mit ./menu.sh
+oder
+starten aus dem Terminal mit ./menu2.sh
