@@ -1,0 +1,25 @@
+Menüsystem für Bash, getestet unter Debian 12
+menu.sh ist Verison 1 (text only)
+menu2.sh ist Version 2 (grafische Oberfläche)
+
+Bitte voher zenity installieren
+sudo spt-get update
+sudo apt-get install zenity
+sudo apt-get xdotool
+sudo apt-get wmctrl
+
+Beide Versionen erkennen das Verzeichnis in dem sie ausgeführt werden, automatisch
+Bei Version 1 muss das Verzeichnis, in dem die Scripte liegen, manuell in die menu.sh eingetragen werden (hier im Quelltext /frank/home/dokumente)
+Bei Version 2 muss  das Verzeichnis, in dem die Scripte liegen, in die Datei spfad eingertragen werden  (hier in spfad /frank/home/dokumente)
+
+menu.list enthält die Einträge des Menüs (bis zu 999), die Nummer 3stelling und dann den Names des Scripts ohne .sh durch Leerstelle getrennt, 
+dann Leerstelle, 0 oder 1 (wenn sudo benötigt wird), dann Leerstelle, dann Numer zwiwchen 0 und 9, wenn das Script Paramter übergeben haben will 
+wenn es ausgeführt wird, 0 = keine Paramter)
+
+menu.desc enthält die Nummer 3stellig, Leerstelle, dann die Beschreibung
+
+menu.para enthält die Parameter, fass das Script diese benötigt
+die Nummer 3stellig, Leerstelle, dann die laufende Nummer des Paramters (1 bis9), Leerstelle, dann N (numerischer Parameter) oder T (Textparamter), 
+Leerstelle, einen Text, der sagt, was gefragt ist. 
+
+
